@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habitude – Build Better Routines</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <script src="script.js"></script>
+
+  
+  <nav class="navbar">
+    <div class="logo">Habitude</div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#challenges">Challenges</a></li>
+      <li><a href="#streaks">Streaks</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#" class="btn nav-btn">Get Started</a>
+  </nav>
+  
+
+
+<section class="hero">
+  <div class="slideshow-container">
+
+
+    <div class="mySlides fade">
+      <img src="img5.jpg" style="width:100%">
+      <div class="overlay">
+        <h1>First we make our habits, then our habits make us.</h1>
+        <a href="#" class="btn">Get Started Free</a>
+      </div>
+    </div>
+
+    
+    <div class="mySlides fade">
+      <img src="img2.jpg" style="width:100%">
+      <div class="overlay">
+        <h1>Focus on being productive instead of busy.</h1>
+        <a href="#" class="btn">Get Started Free</a>
+      </div>
+    </div>
+
+  
+    <div class="mySlides fade">
+      <img src="img3.jpg" style="width:100%">
+      <div class="overlay">
+        <h1>Build Better Routines. Unlock Your Potential.</h1>
+        <a href="#" class="btn">Get Started Free</a>
+      </div>
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</section>
+
+
+
+
+  <section id="features" class="section">
+    <h2>Habitude</h2>
+    <div class="features">
+      <div class="card"><h3>Track Your Habits</h3><p>Stay on top of daily goals with simple habit tracking.</p></div>
+      <div class="card"><h3>See Your Progress</h3><p>Charts, streaks, and insights that keep you motivated.</p></div>
+      <div class="card"><h3>Boost Productivity</h3><p>Organize tasks with to-do lists and smart reminders.</p></div>
+      <div class="card"><h3>Stay Motivated</h3><p>Earn streaks, badges, and rewards as you grow.</p></div>
+    </div>
+  </section>
+
+ 
+  <section id="challenges" class="section">
+    <h2>Daily Challenges</h2>
+    <div class="challenges">
+      <div class="card"><h3>30-Day Fitness</h3><p>Stay active every day with quick workouts.</p><div class="progress-bar"><div class="progress" style="width:40%"></div></div></div>
+      <div class="card"><h3>No Sugar Week</h3><p>Cut sugar for 7 days and feel the difference.</p><div class="progress-bar"><div class="progress" style="width:70%"></div></div></div>
+      <div class="card"><h3>Hydration</h3><p>Drink 4 liters of water daily </p><div class="progress-bar"><div class="progress" style="width:20%"></div></div></div>
+    </div>
+  </section>
+
+ 
+  <section id="streaks" class="section">
+    <h2>Your Streaks</h2>
+    <div class="streaks">
+      <div class="badge"><strong>🔥 7</strong><div>Day Streak</div></div>
+      <div class="badge"><strong>⭐ 27</strong><div>Longest Streak</div></div>
+      <div class="badge"><strong>🏆 5</strong><div>Challenges Won</div></div>
+    </div>
+  </section>
+
+
+  <section id="tools" class="section">
+    <h2>Productivity Boost Tools</h2>
+    <div class="tools">
+      <div class="tool">
+        <h3>✅ To-Do List</h3>
+        <ul>
+          <li><input type="checkbox" checked> Morning workout</li>
+          <li><input type="checkbox"> Read 10 pages</li>
+          <li><input type="checkbox"> Journal for 5 mins</li>
+        </ul>
+      </div>
+      <div class="tool">
+        <h3>⏳ Focus Timer</h3>
+        <p>25:00 Pomodoro session in progress...</p>
+      </div>
+      <div class="tool">
+        <h3>📅 Habit Calendar</h3>
+        <p>Track habits with a simple calendar overview.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;">
+    <h2>Start building better habits today — it’s free!</h2>
+    <a href="#" class="btn" style="background:#4f46e5; color:white;">Sign Up Free</a>
+  </section>
+ <section class="section">
+  <h2>Weekly Habit Plan</h2>
+  <div class="week-plan">
+    <ul>
+      <li><strong>Monday:</strong> 🧘 Yoga – 30 mins </li>
+      <li><strong>Tuesday:</strong> 🏃 Running – 3 km </li>
+      <li><strong>Wednesday:</strong> 📖 Read – 20 pages </li>
+      <li><strong>Thursday:</strong> 💪 Strength Training – 40 mins</li>
+      <li><strong>Friday:</strong> 📝 Journal – 15 mins</li>
+      <li><strong>Saturday:</strong> 🚴 Cycling – 5 km</li>
+      <li><strong>Sunday:</strong> 😌 Meditation – 20 mins</li>
+    </ul>
+  </div>
+</section>
+
+
+  <footer id="contact">
+    <p>© 2025 Habitude. All rights reserved.</p>
+    <div style="margin-top:10px;">
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("mySlides");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 4000); // Change every 4 seconds
+}
+
+function plusSlides(n) {
+  slideIndex += n - 1;
+  showSlides();
+}
+</script>
+
+
+</html>
